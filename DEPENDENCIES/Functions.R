@@ -1,4 +1,4 @@
-packages.to.use <- c("raster", "ggplot", "terrainr","osmdata")
+packages.to.use <- c("raster", "ggplot2", "terrainr","osmdata", "tidyverse", "ggmap")
 
 packages.to.use <- unique(packages.to.use)
 
