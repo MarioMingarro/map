@@ -1,4 +1,4 @@
-
+# Fast OSM mapping
 
 ## --------------------------------------------------
 source("DEPENDENCIES/Functions.R")
