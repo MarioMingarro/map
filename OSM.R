@@ -60,4 +60,13 @@ ggplot() +
   coord_sf(xlim = c(palma_extend[1,1], palma_extend[1,2]), ylim = c(palma_extend[2,1],palma_extend[2,2]), expand = FALSE)+
   theme_void()
 
-  
+
+spain_boundary$shapeName
+library(raster) 
+aa <- subset(spain_boundary, spain_boundary$shapeName != c("Canarias", 
+                                                           "Ciudad Autónoma de Melilla", 
+                                                           "Ciudad Autónoma de Ceuta",
+                                                           "Illes Balears" ))
+drawExtent(show=TRUE, col="red") 
+
+pp <- drawPoly(show=TRUE, col="blue")
